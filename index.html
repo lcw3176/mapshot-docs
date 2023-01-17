@@ -527,7 +527,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /api/image/queue?companyType=kakao&amp;lat=111.0&amp;lng=11.0&amp;layerMode=false&amp;level=2&amp;type=satellite_base HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /image/queue?companyType=kakao&amp;lat=111.0&amp;lng=11.0&amp;layerMode=false&amp;level=2&amp;type=satellite_base HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -568,45 +568,48 @@ Host: localhost:8080</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
 Content-Type: application/json
 Content-Length: 731
 
 [ {
   "x" : 0,
   "y" : 0,
-  "uuid" : "d310326a-9bf5-4892-ac0c-66625c1827c4"
+  "uuid" : "9cfa25b4-e7c8-49e3-80ae-d439f64bf0c1"
 }, {
   "x" : 1,
   "y" : 0,
-  "uuid" : "f8538047-7215-4574-8f09-a661497c5eb4"
+  "uuid" : "a678edda-c1ea-4abe-80d9-e47db28f23b8"
 }, {
   "x" : 2,
   "y" : 0,
-  "uuid" : "59bc1e15-6056-4bbb-8d04-e5dedb999d24"
+  "uuid" : "e0664b89-14cc-4256-9c15-ad6b6b216f63"
 }, {
   "x" : 0,
   "y" : 1,
-  "uuid" : "8ecfbdd9-ef2b-47b6-8614-14c85128fbe8"
+  "uuid" : "dc7fa47d-332a-4edd-8951-72dc30f15049"
 }, {
   "x" : 1,
   "y" : 1,
-  "uuid" : "26311042-cd88-4e0b-a42b-d2e2b9d56e1d"
+  "uuid" : "4d766597-2ab1-4b00-b4a6-ed896cb2aceb"
 }, {
   "x" : 2,
   "y" : 1,
-  "uuid" : "cb2ed04a-5c32-42ba-862d-25bd3483ed51"
+  "uuid" : "0f623fcf-9e7e-450a-bfde-b78c52180625"
 }, {
   "x" : 0,
   "y" : 2,
-  "uuid" : "f046a254-95d9-40a0-80bf-45035d9aadd4"
+  "uuid" : "a03a11c7-e30f-452a-a838-2c443787bae6"
 }, {
   "x" : 1,
   "y" : 2,
-  "uuid" : "fed73c36-8ea6-43a8-a2e9-eda30c2065a0"
+  "uuid" : "cade1ad4-efb4-4a01-a8fb-14831970bd2d"
 }, {
   "x" : 2,
   "y" : 2,
-  "uuid" : "0eed7670-f506-4cf6-a9cb-bbf5be926898"
+  "uuid" : "a18064b1-c4ac-4614-8faf-0fac58bba21b"
 } ]</code></pre>
 </div>
 </div>
@@ -617,7 +620,7 @@ Content-Length: 731
 <div class="sect3">
 <h4 id="_request_2">request</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 1. /api/image/storage/{uuid}</caption>
+<caption class="title">Table 1. /image/storage/{uuid}</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -641,6 +644,9 @@ Content-Length: 731
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">HTTP/1.1 200 OK
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
 Content-Type: image/jpeg
 Accept-Ranges: bytes
 Content-Length: 18
@@ -660,7 +666,7 @@ I am Virtual Image</code></pre>
 <div class="sect3">
 <h4 id="_request_3">request</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 2. /api/notice/summary/{startPostNumber}</caption>
+<caption class="title">Table 2. /notice/summary/{startPostNumber}</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -743,7 +749,7 @@ I am Virtual Image</code></pre>
 <div class="sect3">
 <h4 id="_request_4">request</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 3. /api/notice/detail/{postNumber}</caption>
+<caption class="title">Table 3. /notice/detail/{postNumber}</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -782,7 +788,7 @@ I am Virtual Image</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2023-01-16 17:21:47 +0900
+Last updated 2023-01-17 17:34:22 +0900
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
