@@ -446,11 +446,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_이미지">이미지</a>
 <ul class="sectlevel2">
-<li><a href="#_공통_헤더">공통 헤더</a>
-<ul class="sectlevel3">
-<li><a href="#_header">header</a></li>
-</ul>
-</li>
 <li><a href="#_이미지_생성_요청하기">이미지 생성 요청하기</a>
 <ul class="sectlevel3">
 <li><a href="#_parameter">parameter</a></li>
@@ -460,6 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_이미지_임시_저장_요청하기">이미지 임시 저장 요청하기</a>
 <ul class="sectlevel3">
+<li><a href="#_header">header</a></li>
 <li><a href="#_body">body</a></li>
 <li><a href="#_request_2">request</a></li>
 <li><a href="#_response_2">response</a></li>
@@ -497,30 +493,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="sect1">
 <h2 id="_이미지">이미지</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_공통_헤더">공통 헤더</h3>
-<div class="sect3">
-<h4 id="_header">header</h4>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>JWT_TOKEN</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">기본 인증 토큰</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 <div class="sect2">
 <h3 id="_이미지_생성_요청하기">이미지 생성 요청하기</h3>
 <div class="sect3">
@@ -569,7 +541,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /image/queue?companyType=kakao&amp;lat=111.0&amp;lng=11.0&amp;layerMode=false&amp;level=2&amp;type=satellite_base HTTP/1.1
-JWT_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzQ0NDIxMDh9.ww6-Z5f6FkGDoVj75ZGObzyHhSKhnhb128x7gZHIk0DjNdy1rxifls-5Jgw17m_JCb3HeVCO7XzkGYgr8fsOLw
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -614,44 +585,44 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 767
 
 [ {
   "x" : 0,
   "y" : 0,
-  "uuid" : "bb74106e-8ac7-4fcd-8ff4-9e7518a4bf1f"
+  "uuid" : "444df928-3073-4f17-b73c-36c6fc917e12"
 }, {
-  "x" : 1,
+  "x" : 1000,
   "y" : 0,
-  "uuid" : "ae825af0-2788-4c6f-b0e5-8c0f594ecf7f"
+  "uuid" : "59ee08e7-2e5a-48af-a20b-f45fcab1767c"
 }, {
-  "x" : 2,
+  "x" : 2000,
   "y" : 0,
-  "uuid" : "5a026f85-1756-46a1-b2bb-c8f4a76ae08f"
+  "uuid" : "f4a15118-4df3-421f-9747-6f1dc8c268cf"
 }, {
   "x" : 0,
-  "y" : 1,
-  "uuid" : "27032de7-61a1-4719-851b-b2c712ac2362"
+  "y" : 1000,
+  "uuid" : "1f78ed6a-934c-4664-ba14-c71da6bea720"
 }, {
-  "x" : 1,
-  "y" : 1,
-  "uuid" : "0053ee8c-01e3-4bcb-a2aa-32827c6c02d9"
+  "x" : 1000,
+  "y" : 1000,
+  "uuid" : "e066f9d0-572b-42ce-afe3-e96ae4fcedfa"
 }, {
-  "x" : 2,
-  "y" : 1,
-  "uuid" : "486c3d38-77f4-490b-88e7-298377864ae0"
+  "x" : 2000,
+  "y" : 1000,
+  "uuid" : "c51f6a01-a0fb-421e-93d6-06c0deefc553"
 }, {
   "x" : 0,
-  "y" : 2,
-  "uuid" : "e4e6e9a5-a345-4462-98b5-2ee4d916adfc"
+  "y" : 2000,
+  "uuid" : "baa65d1e-f3a1-428b-bbc2-830e9bc3ce1a"
 }, {
-  "x" : 1,
-  "y" : 2,
-  "uuid" : "d26b5db1-a6ff-4a4d-9e4c-3ca2a5dc09f6"
+  "x" : 1000,
+  "y" : 2000,
+  "uuid" : "171dbf78-713e-4f9c-a2ab-9c1df4f19bda"
 }, {
-  "x" : 2,
-  "y" : 2,
-  "uuid" : "fe9cfd9a-6d68-4f59-9bc4-f520a085450e"
+  "x" : 2000,
+  "y" : 2000,
+  "uuid" : "b410c3be-0f6f-4a2f-b4fc-bc17125b88e7"
 } ]</code></pre>
 </div>
 </div>
@@ -659,6 +630,27 @@ Content-Length: 731
 </div>
 <div class="sect2">
 <h3 id="_이미지_임시_저장_요청하기">이미지 임시 저장 요청하기</h3>
+<div class="sect3">
+<h4 id="_header">header</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>AUTH_TOKEN</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">서버 간 인증 토큰</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect3">
 <h4 id="_body">body</h4>
 <table class="tableblock frame-all grid-all stretch">
@@ -694,12 +686,12 @@ Content-Length: 731
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /image/storage HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-JWT_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzQ0NDI2MjB9.eDskG9Sgvx8XOFxCS8blCcAA34Ko6_WHtim38wOPzyqq7kv8yII-9E6ml0H-9ABSYEfbDysQ-Q0mxp4SJnAbUA
+AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzQ1NjE4OTN9.6WcoBEsqW9winIpSsXz8HJrYnOYW_fQ47zHTh8z2qRzzCnrg0RVNIHQswQXT2tTdX3iFqBKZLN9KvHT0Pi39nQ
 Content-Length: 109
 Host: localhost:8080
 
 {
-  "uuid" : "83814169-5db0-45a8-8d61-eff49aa8d8ba",
+  "uuid" : "7814a28b-5dfc-422f-b38d-08484f3d6c41",
   "base64EncodedImage" : "SSBhbSBWaXJ0dWFsIEltYWdl"
 }</code></pre>
 </div>
@@ -745,8 +737,7 @@ Vary: Access-Control-Request-Headers</code></pre>
 <h4 id="_request_3">request</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /image/storage/d1e64711-df88-4ea7-bc1d-1096406f640a HTTP/1.1
-JWT_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE2NzQ0NDI2MjF9.bNEtihGToDGFd4AJZphCOP4Mg-JGVc_IkI_9LOYgh4KRp_SxQCo38ynJtQPlAf2RzZ3ohrNnOr2ounWpvW7u7g
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /image/storage/6ad7b7be-0706-45a9-b5f3-afc8e742d48e HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
