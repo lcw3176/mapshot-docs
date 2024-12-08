@@ -525,55 +525,55 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-json hljs" data-lang="json">{
   "notices" : [ {
-    "id" : 1711,
+    "id" : 1611,
     "noticeType" : "업데이트",
     "title" : "20",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1710,
+    "id" : 1610,
     "noticeType" : "업데이트",
     "title" : "19",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1709,
+    "id" : 1609,
     "noticeType" : "업데이트",
     "title" : "18",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1708,
+    "id" : 1608,
     "noticeType" : "업데이트",
     "title" : "17",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1707,
+    "id" : 1607,
     "noticeType" : "업데이트",
     "title" : "16",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1706,
+    "id" : 1606,
     "noticeType" : "업데이트",
     "title" : "15",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1705,
+    "id" : 1605,
     "noticeType" : "업데이트",
     "title" : "14",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1704,
+    "id" : 1604,
     "noticeType" : "업데이트",
     "title" : "13",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.295192"
   }, {
-    "id" : 1703,
+    "id" : 1603,
     "noticeType" : "업데이트",
     "title" : "12",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.294193"
   }, {
-    "id" : 1702,
+    "id" : 1602,
     "noticeType" : "업데이트",
     "title" : "11",
-    "createdDate" : "2024-09-13T18:24:17.21824"
+    "createdDate" : "2024-12-08T23:31:44.294193"
   } ],
   "totalPage" : 3
 }</code></pre>
@@ -609,7 +609,7 @@ Host: localhost:8080</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /notice/1690 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /notice/1590 HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -619,11 +619,11 @@ Host: localhost:8080</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-json hljs" data-lang="json">{
-  "id" : 1690,
+  "id" : 1590,
   "noticeType" : "업데이트",
   "title" : "20",
   "content" : "20",
-  "createdDate" : "2024-09-13T18:24:17.194181"
+  "createdDate" : "2024-12-08T23:31:44.267017"
 }</code></pre>
 </div>
 </div>
@@ -637,24 +637,6 @@ Host: localhost:8080</code></pre>
 <div class="paragraph">
 <p>header</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ADMIN_AUTH_TOKEN</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">관리자 인증 토큰</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
 <p>request</p>
 </div>
@@ -693,9 +675,9 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /admin/notice/register HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q
 Content-Length: 82
 Host: localhost:8080
+Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzM2NzE5MDN9.7K7m0G4vJ48dZ6XZ6GWcdde0fatBW1tBEFuvbOrCVSA4jDRogOgKlZCcPg3ojeEiCHT2pa-Zbf0V4alVs1NIOg
 
 {
   "noticeType" : "FIX",
@@ -725,24 +707,6 @@ Vary: Access-Control-Request-Headers</code></pre>
 <div class="paragraph">
 <p>header</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ADMIN_AUTH_TOKEN</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">관리자 인증 토큰</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
 <p>request</p>
 </div>
@@ -779,11 +743,11 @@ Vary: Access-Control-Request-Headers</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /admin/notice/modify/1669 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /admin/notice/modify/1569 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q
 Content-Length: 113
 Host: localhost:8080
+Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzM2NzE5MDN9.7K7m0G4vJ48dZ6XZ6GWcdde0fatBW1tBEFuvbOrCVSA4jDRogOgKlZCcPg3ojeEiCHT2pa-Zbf0V4alVs1NIOg
 
 {
   "noticeType" : "RESERVED_CHECK",
@@ -813,24 +777,6 @@ Vary: Access-Control-Request-Headers</code></pre>
 <div class="paragraph">
 <p>header</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ADMIN_AUTH_TOKEN</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">관리자 인증 토큰</p></td>
-</tr>
-</tbody>
-</table>
 <div class="paragraph">
 <p>request</p>
 </div>
@@ -855,10 +801,10 @@ Vary: Access-Control-Request-Headers</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /admin/notice/delete/1469 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /admin/notice/delete/1369 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q
-Host: localhost:8080</code></pre>
+Host: localhost:8080
+Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzM2NzE5MDN9.7K7m0G4vJ48dZ6XZ6GWcdde0fatBW1tBEFuvbOrCVSA4jDRogOgKlZCcPg3ojeEiCHT2pa-Zbf0V4alVs1NIOg</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -918,65 +864,65 @@ Host: localhost:8080</code></pre>
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-json hljs" data-lang="json">{
   "posts" : [ {
-    "id" : 3193,
+    "id" : 3093,
     "writer" : "99",
     "title" : "99",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.271991"
+    "createdDate" : "2024-12-08T23:31:44.225653"
   }, {
-    "id" : 3192,
+    "id" : 3092,
     "writer" : "98",
     "title" : "98",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.225653"
   }, {
-    "id" : 3191,
+    "id" : 3091,
     "writer" : "97",
     "title" : "97",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.225653"
   }, {
-    "id" : 3190,
+    "id" : 3090,
     "writer" : "96",
     "title" : "96",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.225653"
   }, {
-    "id" : 3189,
+    "id" : 3089,
     "writer" : "95",
     "title" : "95",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   }, {
-    "id" : 3188,
+    "id" : 3088,
     "writer" : "94",
     "title" : "94",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   }, {
-    "id" : 3187,
+    "id" : 3087,
     "writer" : "93",
     "title" : "93",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   }, {
-    "id" : 3186,
+    "id" : 3086,
     "writer" : "92",
     "title" : "92",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   }, {
-    "id" : 3185,
+    "id" : 3085,
     "writer" : "91",
     "title" : "91",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   }, {
-    "id" : 3184,
+    "id" : 3084,
     "writer" : "90",
     "title" : "90",
     "commentCount" : 0,
-    "createdDate" : "2024-09-13T18:24:16.27099"
+    "createdDate" : "2024-12-08T23:31:44.224651"
   } ],
   "totalPage" : 10
 }</code></pre>
@@ -1012,7 +958,7 @@ Host: localhost:8080</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /post/2791 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /post/2691 HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -1022,11 +968,11 @@ Host: localhost:8080</code></pre>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-json hljs" data-lang="json">{
-  "id" : 2791,
+  "id" : 2691,
   "writer" : "99",
   "title" : "99",
   "content" : "99",
-  "createdDate" : "2024-09-13T18:24:16.143007"
+  "createdDate" : "2024-12-08T23:31:44.119678"
 }</code></pre>
 </div>
 </div>
@@ -1150,7 +1096,7 @@ Vary: Access-Control-Request-Headers</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /post/delete/2892?password=password HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /post/delete/2792?password=password HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -1203,7 +1149,7 @@ Vary: Access-Control-Request-Headers</code></pre>
 </table>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /comment?page=0&amp;postId=2681 HTTP/1.1
+<pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /comment?page=0&amp;postId=2581 HTTP/1.1
 Host: localhost:8080</code></pre>
 </div>
 </div>
@@ -1217,52 +1163,52 @@ Host: localhost:8080</code></pre>
     "id" : 25699,
     "writer" : "0",
     "content" : "0",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.01064"
   }, {
     "id" : 25700,
     "writer" : "1",
     "content" : "1",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.01064"
   }, {
     "id" : 25701,
     "writer" : "2",
     "content" : "2",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.01064"
   }, {
     "id" : 25702,
     "writer" : "3",
     "content" : "3",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25703,
     "writer" : "4",
     "content" : "4",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25704,
     "writer" : "5",
     "content" : "5",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25705,
     "writer" : "6",
     "content" : "6",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25706,
     "writer" : "7",
     "content" : "7",
-    "createdDate" : "2024-09-13T18:24:16.035502"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25707,
     "writer" : "8",
     "content" : "8",
-    "createdDate" : "2024-09-13T18:24:16.036503"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   }, {
     "id" : 25708,
     "writer" : "9",
     "content" : "9",
-    "createdDate" : "2024-09-13T18:24:16.036503"
+    "createdDate" : "2024-12-08T23:31:44.011639"
   } ],
   "totalPage" : 1
 }</code></pre>
@@ -1321,7 +1267,7 @@ Content-Length: 103
 Host: localhost:8080
 
 {
-  "postId" : 2691,
+  "postId" : 2591,
   "writer" : "헬로",
   "content" : "방가방가",
   "password" : "hello"
@@ -1413,7 +1359,7 @@ Vary: Access-Control-Request-Headers</code></pre>
 <h3 id="_로그인">로그인</h3>
 <div class="paragraph">
 <p>관리자 권한을 요청합니다.
-알맞은 아이디와 비밀번호 입력 시 관리자 전용 토큰이 헤더값으로 주어집니다.</p>
+알맞은 아이디와 비밀번호 입력 시 관리자 전용 토큰이 쿠키값으로 주어집니다.</p>
 </div>
 <div class="paragraph">
 <p>request</p>
@@ -1466,7 +1412,7 @@ Host: localhost:8080
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q</code></pre>
+Set-Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzM2NzE5MDN9.7K7m0G4vJ48dZ6XZ6GWcdde0fatBW1tBEFuvbOrCVSA4jDRogOgKlZCcPg3ojeEiCHT2pa-Zbf0V4alVs1NIOg; Path=/; Domain=kmapshot.com; Max-Age=3600; Expires=Sun, 08 Dec 2024 15:31:43 GMT; Secure</code></pre>
 </div>
 </div>
 </div>
@@ -1477,35 +1423,14 @@ ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_
 인증시간이 갱신된 새로운 토큰이 발급됩니다.</p>
 </div>
 <div class="paragraph">
-<p>header</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Name</th>
-<th class="tableblock halign-left valign-top">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>ADMIN_AUTH_TOKEN</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">관리자 인증 토큰</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
 <p>request</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /admin/user/auth/refresh HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q
-Host: localhost:8080</code></pre>
+Host: localhost:8080
+Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzIxOTUwMTF9.UiOQp8puOm1Vi55Dy6D_u-iiZh89ohdncTfc1nfwu8JJYcDhqwhM9M0cp3BY_bVepQxmKQ1MtgStmroOfd9_NA</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1517,7 +1442,7 @@ Host: localhost:8080</code></pre>
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
-ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_vu9hobYOS5bukWwRaPG3vrBp-mFxJa-KIxU-4ZJqpyYFxfXeoAV15bqKvJAk124XMG8s8Q</code></pre>
+Set-Cookie: ADMIN_AUTH_TOKEN=eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MzIxOTUwMTF9.UiOQp8puOm1Vi55Dy6D_u-iiZh89ohdncTfc1nfwu8JJYcDhqwhM9M0cp3BY_bVepQxmKQ1MtgStmroOfd9_NA; Path=/; Domain=kmapshot.com; Max-Age=3600; Expires=Thu, 21 Nov 2024 13:16:51 GMT; Secure</code></pre>
 </div>
 </div>
 </div>
@@ -1527,7 +1452,7 @@ ADMIN_AUTH_TOKEN: eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE3MjYyMjMwNTV9.MP3YmgvSaD62fEF_
 <div id="footer">
 <div id="footer-text">
 Version 1<br>
-Last updated 2024-09-13 18:23:38 +0900
+Last updated 2024-12-08 23:30:10 +0900
 </div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"></script>
